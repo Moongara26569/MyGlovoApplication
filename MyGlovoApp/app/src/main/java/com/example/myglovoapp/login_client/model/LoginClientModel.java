@@ -22,7 +22,6 @@ public class LoginClientModel implements ContractLoginClient.Model{
         this.presenter = presenter;
     }
 
-
     @Override
     public void loginAPI(User user, OnLoginClientListener respuesta) {
         //Aqui irá la solicitud a base de datos.

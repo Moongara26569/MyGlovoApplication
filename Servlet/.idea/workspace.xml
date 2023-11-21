@@ -5,42 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c66f65c-6d1e-4cbf-8328-8e0bab5fad5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/beans/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/beans/Cliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/ContractLoginClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/ContractLoginClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/DataLoginClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/JsonUserData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/Restaurante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/RestauranteAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/RestauranteDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/model/LoginClientModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/model/LoginClientModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/presenter/LoginClientPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/presenter/LoginClientPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/view/LoginClientActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/view/LoginClientActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/lst_restaurants/ContractLstRestaurantes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/lst_restaurants/ContractLstRestaurantes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/lst_restaurants/DataLstRestaurantes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/lst_restaurants/JsonRestaurantesData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/lst_restaurants/model/lstRestaurantesModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/lst_restaurants/model/lstRestaurantesModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/utils/ApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/utils/ApiService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Servlet.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servlet/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servlet/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servlet/untitled/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servlet/untitled/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servlet/untitled/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servlet/untitled/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servlet/untitled/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servlet/untitled/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servlet/untitled/src/main/java/DAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servlet/untitled/src/main/java/MotorSQL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servlet/untitled/src/main/java/MyServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servlet/untitled/src/main/java/UserDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servlet/untitled/src/main/java/Usuario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servlet/untitled/src/main/java/UsuarioAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servlet/untitled/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servlet/untitled/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/DAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/MyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/MyServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/UsuarioAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/UsuarioAction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -48,13 +40,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="2YU4wxPhc1FT6WcJwAfIUHpiGvN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -62,8 +50,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Ana/ProyectoAndroid/MyGlovoApplication/Servlet",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Ana/MyGlovoApplication/Servlet",
     "settings.editor.selected.configurable": "preferences.updates"
   }
 }]]></component>

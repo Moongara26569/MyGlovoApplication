@@ -8,19 +8,15 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-/**
- *
- * @author S2-PC104
- */
+
 public class UserDAO extends Usuario{
-        private static final String SQL_INSERT = "INSERT INTO USUARIOS (EMAIL, NOMBRE_USUARIO, CONTRASENA, PHONE) VALUES ";
-                                                //INSERT INTO APP.USUARIO (ID, EMAIL, PASSWORD) VALUES (1, 'A', '1234')
-                                                // INSERT INTO APP.USUARIO (EMAIL, PASSWORD) VALUES ('A', 'A')
+    private static final String SQL_INSERT = "INSERT INTO USUARIOS (EMAIL, NOMBRE_USUARIO, CONTRASENA, PHONE) VALUES ";
     private static final String SQL_FIND_ALL = "SELECT  *  FROM usuarios WHERE ";
 
     private MotorSQL motorSql;
 
     public UserDAO() {
+
         this.motorSql = new MotorSQL();
     }
 
