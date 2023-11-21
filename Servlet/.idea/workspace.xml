@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5c66f65c-6d1e-4cbf-8328-8e0bab5fad5d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/beans/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/beans/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/ContractLoginClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/ContractLoginClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/DataLoginClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/JsonUserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/model/LoginClientModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/model/LoginClientModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/presenter/LoginClientPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/presenter/LoginClientPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/view/LoginClientActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/view/LoginClientActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/utils/ApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/utils/ApiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Servlet.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servlet/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servlet/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servlet/untitled/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servlet/untitled/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servlet/untitled/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servlet/untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servlet/untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servlet/untitled/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servlet/untitled/src/main/java/DAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servlet/untitled/src/main/java/MotorSQL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servlet/untitled/src/main/java/MyServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servlet/untitled/src/main/java/UserDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servlet/untitled/src/main/java/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servlet/untitled/src/main/java/UsuarioAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servlet/untitled/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servlet/untitled/src/main/webapp/index.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2YU4wxPhc1FT6WcJwAfIUHpiGvN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Ana/ProyectoAndroid/MyGlovoApplication/Servlet",
+    "settings.editor.selected.configurable": "preferences.updates"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="com.poratu.idea.plugins.tomcat" nameIsGenerated="true">
+      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <predefined_log_file id="Tomcat Catalina Log" />
+      <predefined_log_file id="Tomcat Manager Log" />
+      <predefined_log_file id="Tomcat Host Manager Log" />
+      <option name="catalinaBase" value="C:\Users\S2-PC00\.SmartTomcat\Servlet\untitled" />
+      <option name="contextPath" value="/untitled" />
+      <option name="docBase" value="$PROJECT_DIR$/untitled/src/main/webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
+      <option name="extraClassPath" value="" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/8.5.95" />
+          <option name="path" value="$PROJECT_DIR$/../../../../apache-tomcat-8.5.95" />
+          <option name="version" value="8.5.95.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <module name="untitled" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5c66f65c-6d1e-4cbf-8328-8e0bab5fad5d" name="Changes" comment="" />
+      <created>1700567067275</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700567067275</updated>
+    </task>
+    <servers />
+  </component>
+</project>

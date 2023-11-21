@@ -18,6 +18,7 @@ public class MyServlet  extends HttpServlet {
                                                                     //response.setContentType("text/plain;charset=UTF-8");
             PrintWriter out = response.getWriter();
             String action = request.getParameter("ACTION");
+            action = "USUARIO.LOGIN";
             String[] arrayAction = action.split("\\.");
 
             switch (arrayAction[0]) {

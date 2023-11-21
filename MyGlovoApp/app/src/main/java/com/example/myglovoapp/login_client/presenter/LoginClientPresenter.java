@@ -1,29 +1,32 @@
 package com.example.myglovoapp.login_client.presenter;
 
-import com.example.myglovoapp.beans.Cliente;
+import com.example.myglovoapp.beans.User;
 import com.example.myglovoapp.login_client.ContractLoginClient;
 import com.example.myglovoapp.login_client.model.LoginClientModel;
 
-public class LoginClientPresenter implements ContractLoginClient.Presenter{
+public class LoginClientPresenter implements ContractLoginClient.Presenter, ContractLoginClient.Model.OnLoginClientListener{
     //comunica la view con el model
-    ContractLoginClient.View view;
+    private ContractLoginClient.View view;
+    private LoginClientModel model;
 
     public LoginClientPresenter(ContractLoginClient.View view) {
+
         this.view = view;
+        this.model = new LoginClientModel(this);
     }
 
     @Override
-    public void login(String username, String pass) {
-        //email ana@gmail.com
-        //pass 1234
+    public void login(User user) {
+        model.loginAPI(user,this);
+    }
 
-        //aqui habría que recorrer los datos de la bd
+    @Override
+    public void onFinished(User user) {
+        view.successLogin(user);
+    }
 
-        if(username.equals("ana@gmail.com") && pass.equals("1234")){
-            view.successLogin("Bienvenido a Glovo");
-        }else{
-            view.failureLogin("Nombre de usuario o contraseña incorrectos");
-        }
+    @Override
+    public void onFailure(String err) {
 
     }
 }

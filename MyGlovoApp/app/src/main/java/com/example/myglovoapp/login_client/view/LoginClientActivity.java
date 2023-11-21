@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.myglovoapp.R;
-import com.example.myglovoapp.beans.Cliente;
+import com.example.myglovoapp.beans.User;
 import com.example.myglovoapp.login_client.ContractLoginClient;
 import com.example.myglovoapp.login_client.presenter.LoginClientPresenter;
 import com.example.myglovoapp.lst_restaurants.view.lstRestaurantesActivity;
@@ -20,7 +20,6 @@ public class LoginClientActivity extends AppCompatActivity implements ContractLo
     //codigo de ui
 
     ContractLoginClient.Presenter presenter;
-
     EditText clientUsername,clientPassword;
     Button btn_login;
 
@@ -48,7 +47,10 @@ public class LoginClientActivity extends AppCompatActivity implements ContractLo
                 if(TextUtils.isEmpty(username) || TextUtils.isEmpty(password)){
                     failureLogin("Rellene todos los campos");
                 }else{
-                    presenter.login(username,password);
+                    User user  = new User();
+                    user.setUsername(username);
+                    user.setToken(password);
+                    presenter.login(user);
                 }
             }
         });
@@ -57,9 +59,9 @@ public class LoginClientActivity extends AppCompatActivity implements ContractLo
     }
 
     @Override
-    public void successLogin(String mess) {
+    public void successLogin(User user) {
 
-        Toast.makeText(this, mess,Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Bienvenido a Glovo",Toast.LENGTH_LONG).show();
         Intent intent = new Intent(this, lstRestaurantesActivity.class);
         startActivity(intent);
         finish();

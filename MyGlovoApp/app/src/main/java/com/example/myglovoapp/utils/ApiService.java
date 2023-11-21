@@ -1,12 +1,24 @@
 package com.example.myglovoapp.utils;
 
 
-import com.example.myglovoapp.login_client.DataLoginClient;
+import com.example.myglovoapp.login_client.JsonUserData;
 
 import retrofit2.Call;
+import retrofit2.http.GET;
 import retrofit2.http.Headers;
 import retrofit2.http.Query;
 
 public interface ApiService {
-    Call<DataLoginClient> getDataUser(@Query("LOGIN") String login);
+    public static final String URL = "http://192.168.104.55:8080/untitled/";
+
+    @Headers({
+            "Accept: application/json",
+            "Content-Type: application/json"
+    })
+
+    //Call<MyData> getDataUser(@Query("ACTION") String action);
+    @GET("MyServlet")
+    Call<JsonUserData> getDataUser(@Query("ACTION") String action,
+                                   @Query("EMAIL") String email,
+                                   @Query("PASSWORD") String pass);
 }

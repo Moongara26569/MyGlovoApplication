@@ -2,15 +2,12 @@ package com.example.myglovoapp.login_client.model;
 
 import android.util.Log;
 
-import com.example.myglovoapp.beans.Cliente;
+import com.example.myglovoapp.beans.User;
 import com.example.myglovoapp.login_client.ContractLoginClient;
-import com.example.myglovoapp.login_client.DataLoginClient;
+import com.example.myglovoapp.login_client.JsonUserData;
 import com.example.myglovoapp.login_client.presenter.LoginClientPresenter;
 import com.example.myglovoapp.utils.ApiService;
 import com.example.myglovoapp.utils.RetrofitCliente;
-
-import java.io.IOException;
-import java.util.ArrayList;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -27,21 +24,36 @@ public class LoginClientModel implements ContractLoginClient.Model{
 
 
     @Override
-    public void loginAPI(String email, String pass, OnLoginClientListener onLoginUserListener) {
-        ApiService apiService = RetrofitCliente.getClient("http://" + IP_BASE + "/GlovoBackend/").
-                create(ApiService.class);
+    public void loginAPI(User user, OnLoginClientListener respuesta) {
+        //Aqui irá la solicitud a base de datos.
+        String username = user.getUsername();
+        String pass = user.getToken();
 
-        Call<DataLoginClient> call = apiService.getDataUser ("CLIENT.LOGIN");
-        call.enqueue(new Callback<DataLoginClient>() {
+        // Crear una instancia de ApiService
+        ApiService apiService = RetrofitCliente.getClient(ApiService.URL).create(ApiService.class);
+
+        Call<JsonUserData> call =   apiService.getDataUser("USUARIO.LOGIN", "a", "1234");
+        call.enqueue(new Callback<JsonUserData>() {
             @Override
-            public void onResponse(Call<DataLoginClient> call, Response<DataLoginClient> response) {
-
+            public void onResponse(Call<JsonUserData> call, Response<JsonUserData> response) {
+                if (response.isSuccessful()) {
+                    JsonUserData misDatos = response.body();
+                    if (misDatos != null && misDatos.getLstUsers().size() > 0) {
+                        Log.e("Datos", misDatos.getLstUsers().get(0).getUsername());
+                        respuesta.onFinished(misDatos.getLstUsers().get(0));
+                    } else {
+                        Log.e("Error de datos", "1");
+                    }
+                } else {
+                    Log.e("Response Error", "Not succesful");
+                }
             }
 
             @Override
-            public void onFailure(Call<DataLoginClient> call, Throwable t) {
-
+            public void onFailure(Call<JsonUserData> call, Throwable t) {
+                Log.e("Response Error", "Cuerpo de error: " + t.getMessage());
             }
+
         });
-    }
+        }
 }

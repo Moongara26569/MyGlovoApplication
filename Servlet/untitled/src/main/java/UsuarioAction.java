@@ -16,8 +16,9 @@ public class UsuarioAction {
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         String jsonRespuesta = "";
         String action = request.getParameter("ACTION");
-
+        action = "USUARIO.LOGIN";
         String[] arrayAction = action.split("\\.");
+
         switch (arrayAction[1]) {
             case "REGISTER":
                 jsonRespuesta = register(request, response);
@@ -61,6 +62,8 @@ public class UsuarioAction {
         
         String email = request.getParameter("EMAIL");
         String pass = request.getParameter("PASSWORD");
+        email = "a";
+        pass = "1234";
         String msg = "";
         
     
@@ -75,8 +78,8 @@ public class UsuarioAction {
                         "    \"message\": \"Login correcto. \",\n" +
                         "    \"lstUsers\": [\n" +
                         "        {\n" +
-                        "            \"username\":" +  usuario.getEmail() + ",\n" +
-                        "            \"token\": " +  usuario.getPassword() + "\n" +
+                        "            \"username\":\"" +  usuario.getEmail() + "\",\n" +
+                        "            \"token\": \"" +  usuario.getPassword() + "\" \n" +
                         "        }" +
                         "    ]\n" +
                         "}";
