@@ -5,22 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c66f65c-6d1e-4cbf-8328-8e0bab5fad5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/Restaurante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/RestauranteAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/RestauranteDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/model/LoginClientModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/model/LoginClientModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/lst_restaurants/ContractLstRestaurantes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/lst_restaurants/ContractLstRestaurantes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/lst_restaurants/DataLstRestaurantes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/lst_restaurants/JsonRestaurantesData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/lst_restaurants/model/lstRestaurantesModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/lst_restaurants/model/lstRestaurantesModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/utils/ApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/utils/ApiService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/DAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/MyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/MyServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/UsuarioAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/UsuarioAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/RestauranteAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/RestauranteAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/RestauranteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/RestauranteDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +27,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2YU4wxPhc1FT6WcJwAfIUHpiGvN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -53,7 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Ana/MyGlovoApplication/Servlet",
+    "last_opened_file_path": "C:/Users/S2-PC00/Documents/GitHub/MyGlovoApplication/Servlet",
     "settings.editor.selected.configurable": "preferences.updates"
   }
 }]]></component>
@@ -67,19 +54,16 @@
       <option name="catalinaBase" value="C:\Users\S2-PC00\.SmartTomcat\Servlet\untitled" />
       <option name="contextPath" value="/untitled" />
       <option name="docBase" value="$PROJECT_DIR$/untitled/src/main/webapp" />
-      <option name="envOptions">
-        <map />
-      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
           <option name="name" value="Apache Tomcat/8.5.95" />
-          <option name="path" value="$PROJECT_DIR$/../../../../apache-tomcat-8.5.95" />
+          <option name="path" value="$USER_HOME$/apache-tomcat-8.5.95" />
           <option name="version" value="8.5.95.0" />
         </TomcatInfo>
       </option>
       <option name="vmOptions" value="" />
-      <module name="untitled" />
+      <module name="Servlet" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

@@ -10,7 +10,7 @@ public class RestauranteDAO extends Restaurante{
         this.motorSql = new MotorSQL();
     }
 
-    public static ArrayList<Restaurante> findAll() {
+    public ArrayList<Restaurante> findAll() {
         ArrayList<Restaurante> restaurantes = new ArrayList<>();
         this.motorSql.connect();
         String sql = "SELECT * FROM RESTAURANTES WHERE 1=1";

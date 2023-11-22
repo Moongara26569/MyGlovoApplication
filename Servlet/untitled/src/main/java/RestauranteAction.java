@@ -21,7 +21,8 @@ public class RestauranteAction {
     }
 
     private String allRestaurants(HttpServletRequest request, HttpServletResponse response) {
-        ArrayList<Restaurante> restaurantes = RestauranteDAO.findAll();
+        RestauranteDAO restauranteDAO= new RestauranteDAO();
+        ArrayList<Restaurante> restaurantes = restauranteDAO.findAll();
 
         StringBuilder jsonRespuesta = new StringBuilder();
         jsonRespuesta.append("[");
