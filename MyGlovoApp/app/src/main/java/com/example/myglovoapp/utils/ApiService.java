@@ -20,7 +20,7 @@ public interface ApiService {
     //Call<MyData> getDataUser(@Query("ACTION") String action);
     @GET("MyServlet")
     Call<JsonUserData> getDataUser(@Query("ACTION") String action,
-                                   @Query("EMAIL") String email,
+                                   @Query("NOMBRE") String nombre,
                                    @Query("PASSWORD") String pass);
 
     @GET("MyServlet")

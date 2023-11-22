@@ -8,10 +8,7 @@
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author S2-PC104
- */
+
 public class UsuarioAction {
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         String jsonRespuesta = "";
@@ -20,9 +17,6 @@ public class UsuarioAction {
         String[] arrayAction = action.split("\\.");
 
         switch (arrayAction[1]) {
-            case "REGISTER":
-                jsonRespuesta = register(request, response);
-                break;
             case "LOGIN":
                 jsonRespuesta = login(request, response);
                 break;
@@ -30,42 +24,15 @@ public class UsuarioAction {
         return jsonRespuesta;
     }
     
-
-    private String register(HttpServletRequest request,
-            HttpServletResponse response) {
-        String email = request.getParameter("EMAIL");
-        String pass = request.getParameter("PASSWORD");
-        String nombre = request.getParameter("NOMBRE_USUARIO");
-        String telefono = request.getParameter("TLF");
-        
-        Usuario usuario = new Usuario();
-            usuario.setEmail(email);
-            usuario.setPassword(pass);
-            usuario.setNombre(nombre);
-            usuario.setPhone(telefono);
-        UserDAO usuarioDAO = new UserDAO();
-        int numFilasModificadas = usuarioDAO.add(usuario);
-        String respJSON = "";
-        if(numFilasModificadas>0){
-            Usuario.toJSon(usuario);
-        }else{
-            usuario.setEmail(null);
-            usuario.setPassword(null);
-        }
-        // Usuario.toArrayJSon(peliculas);
-        return Usuario.toJSon(usuario);
-    }
-
-    
     private String login(HttpServletRequest request,
             HttpServletResponse response) {
         
-        String email = request.getParameter("EMAIL");
+        String nombre = request.getParameter("NOMBRE");
         String pass = request.getParameter("PASSWORD");
         String msg = "";
 
             Usuario usuario = new Usuario();
-                usuario.setEmail(email);
+                usuario.setNombre(nombre);
                 usuario.setPassword(pass);
                 UserDAO usuarioDAO = new UserDAO();
                 boolean usuariosEncontrados = usuarioDAO.findAll(usuario);
@@ -75,7 +42,7 @@ public class UsuarioAction {
                         "    \"message\": \"Login correcto. \",\n" +
                         "    \"lstUsers\": [\n" +
                         "        {\n" +
-                        "            \"username\":\"" +  usuario.getEmail() + "\",\n" +
+                        "            \"username\":\"" +  usuario.getNombre() + "\",\n" +
                         "            \"token\": \"" +  usuario.getPassword() + "\" \n" +
                         "        }" +
                         "    ]\n" +
@@ -86,7 +53,7 @@ public class UsuarioAction {
                         "    \"message\": \"Login incorrecto. \",\n" +
                         "    \"lstUsers\": [\n" +
                         "        {\n" +
-                        "            \"username\":" +  usuario.getEmail() + ",\n" +
+                        "            \"username\":" +  usuario.getNombre() + ",\n" +
                         "            \"token\": " +  usuario.getPassword() + "\n" +
                         "        }" +
                         "    ]\n" +

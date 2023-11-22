@@ -10,8 +10,7 @@ import java.util.ArrayList;
 
 
 public class UserDAO extends Usuario{
-    private static final String SQL_INSERT = "INSERT INTO USUARIOS (EMAIL, NOMBRE_USUARIO, CONTRASENA, PHONE) VALUES ";
-    private static final String SQL_FIND_ALL = "SELECT  *  FROM usuarios WHERE ";
+    private static final String SQL_FIND_ALL = "SELECT  *  FROM USER WHERE ";
 
     private MotorSQL motorSql;
 
@@ -20,28 +19,11 @@ public class UserDAO extends Usuario{
         this.motorSql = new MotorSQL();
     }
 
-    public int add(Usuario entidad) {
-        this.motorSql.connect();
-        String sql = SQL_INSERT
-                + "('" + entidad.getEmail() + " ' , "
-                + " ' " + entidad.getNombre() + " ' , "
-                + " ' " + entidad.getPassword() + " ' , "
-                + " ' " + entidad.getPhone() + " ' )";
-        
-        System.out.println("SQL-> " + sql);
-        int resp = this.motorSql.execute(sql);
-        this.motorSql.disconnect();
-        return resp;
-
-    }
-
-
-
     public boolean findAll(Usuario bean) {
         boolean bool = true;
          this.motorSql.connect();
         String sql = SQL_FIND_ALL
-            + "EMAIL= " +"'" +bean.getEmail()+"'"  + " AND CONTRASENA like " + "'%" +bean.getPassword()+"%'";
+            + "nombre= " +"'" +bean.getNombre()+"'"  + " AND pass like " + "'%" +bean.getPassword()+"%'";
 
         System.out.println("SQL-> " + sql);
         ResultSet rs = this.motorSql.executeQuery(sql);

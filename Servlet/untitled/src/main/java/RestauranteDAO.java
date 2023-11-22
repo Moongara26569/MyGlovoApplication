@@ -17,9 +17,9 @@ public class RestauranteDAO extends Restaurante{
         try (ResultSet resultSet = this.motorSql.executeQuery(sql)) {
 
             while (resultSet.next()) {
-                int idRestaurante = resultSet.getInt("idRestaurante");
+                int idRestaurante = resultSet.getInt("id");
                 String nombre = resultSet.getString("nombre");
-                String desc = resultSet.getString("desc");
+                String desc = resultSet.getString("descripcion");
                 String tlfn = resultSet.getString("tlfn");
                 String categoria = resultSet.getString("categoria");
 

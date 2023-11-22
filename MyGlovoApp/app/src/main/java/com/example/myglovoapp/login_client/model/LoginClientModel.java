@@ -31,7 +31,7 @@ public class LoginClientModel implements ContractLoginClient.Model{
         // Crear una instancia de ApiService
         ApiService apiService = RetrofitCliente.getClient(ApiService.URL).create(ApiService.class);
 
-        Call<JsonUserData> call =   apiService.getDataUser("USUARIO.LOGIN", "a", "1234");
+        Call<JsonUserData> call =   apiService.getDataUser("USUARIO.LOGIN", username,pass );
         call.enqueue(new Callback<JsonUserData>() {
             @Override
             public void onResponse(Call<JsonUserData> call, Response<JsonUserData> response) {

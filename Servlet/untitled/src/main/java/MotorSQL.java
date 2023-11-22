@@ -11,10 +11,10 @@ public class MotorSQL {
     private ResultSet rs;
 
 
-    private static final String URL = "jdbc:derby://localhost:1527/ana";
-    private static final String CONTROLADOR = "com.mysql.jdbc.Driver";
+    private static final String URL = "jdbc:mysql://pedidosbd.crbh9zpqeihj.us-east-1.rds.amazonaws.com:3306/pedidosbd";
+    //private static final String CONTROLADOR = "com.mysql.jdbc.Driver";
     private static final String USER = "ana";
-    private static final String PASS = "ana";
+    private static final String PASS = "12341234";
 
     public void connect() {
         try {

@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="5c66f65c-6d1e-4cbf-8328-8e0bab5fad5d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/RestauranteAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/RestauranteAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/MotorSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/MotorSQL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/untitled/src/main/java/RestauranteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/RestauranteDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/UsuarioAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/UsuarioAction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,12 +50,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/S2-PC00/Documents/GitHub/MyGlovoApplication/Servlet",
+    "last_opened_file_path": "C:/Users/S2-PC00/Documents/GitHub/MyGlovoApplication/Servlet/untitled",
     "settings.editor.selected.configurable": "preferences.updates"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="Unnamed" type="com.poratu.idea.plugins.tomcat" nameIsGenerated="true">
+  <component name="RunManager" selected="Smart Tomcat.Unnamed (1)">
+    <configuration name="Unnamed (1)" type="com.poratu.idea.plugins.tomcat" nameIsGenerated="true">
       <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
       <predefined_log_file enabled="true" id="Tomcat Access Log" />
       <predefined_log_file id="Tomcat Catalina Log" />
@@ -54,20 +64,53 @@
       <option name="catalinaBase" value="C:\Users\S2-PC00\.SmartTomcat\Servlet\untitled" />
       <option name="contextPath" value="/untitled" />
       <option name="docBase" value="$PROJECT_DIR$/untitled/src/main/webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
-          <option name="name" value="Apache Tomcat/8.5.95" />
-          <option name="path" value="$USER_HOME$/apache-tomcat-8.5.95" />
+          <option name="name" value="Apache Tomcat/8.5.95 (3)" />
+          <option name="path" value="D:/apache-tomcat-8.5.95" />
           <option name="version" value="8.5.95.0" />
         </TomcatInfo>
       </option>
       <option name="vmOptions" value="" />
-      <module name="Servlet" />
+      <module name="untitled" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Unnamed" type="com.poratu.idea.plugins.tomcat" nameIsGenerated="true">
+      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <predefined_log_file id="Tomcat Catalina Log" />
+      <predefined_log_file id="Tomcat Manager Log" />
+      <predefined_log_file id="Tomcat Host Manager Log" />
+      <option name="catalinaBase" value="C:\Users\S2-PC00\.SmartTomcat\Servlet\untitled" />
+      <option name="contextPath" value="/untitled" />
+      <option name="docBase" value="C:\Users\S2-PC00\Documents\GitHub\MyGlovoApplication\Servlet\untitled" />
+      <option name="envOptions">
+        <map />
+      </option>
+      <option name="extraClassPath" value="" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/8.5.95 (2)" />
+          <option name="path" value="D:/apache-tomcat-8.5.95" />
+          <option name="version" value="8.5.95.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <module name="untitled" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Smart Tomcat.Unnamed" />
+      <item itemvalue="Smart Tomcat.Unnamed (1)" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -79,5 +122,21 @@
       <updated>1700567067275</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/untitled/src/main/java/UserDAO.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/untitled/src/main/java/MyServlet.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
