@@ -11,15 +11,15 @@ public class MotorSQL {
     private ResultSet rs;
 
 
-    private static final String URL = "jdbc:mysql://pedidosbd.crbh9zpqeihj.us-east-1.rds.amazonaws.com:3306";
-    //private static final String CONTROLADOR = "com.mysql.jdbc.Driver";
+    private static final String URL = "jdbc:mysql://pedidosbd.crbh9zpqeihj.us-east-1.rds.amazonaws.com:3306/pedidosdb";
+    private static final String CONTROLADOR = "com.mysql.cj.jdbc.Driver";
     private static final String USER = "ana";
     private static final String PASS = "12341234";
 
     public void connect() {
         try {
 
-            //Class.forName(CONTROLADOR);
+            Class.forName(CONTROLADOR);
 
             conn = DriverManager.getConnection(URL, USER, PASS);
 
