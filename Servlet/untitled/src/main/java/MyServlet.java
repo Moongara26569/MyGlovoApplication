@@ -24,9 +24,14 @@ public class MyServlet  extends HttpServlet {
                 case "USUARIO":
                     out.print(new UsuarioAction().execute(request, response));
                     break;
+                case "PROPIETARIO":
+                    out.print(new PropietarioAction().execute(request, response));
+                    break;
                 case "RESTAURANTE":
                     out.print(new RestauranteAction().execute(request, response));
                     break;
+
+
             }
             out.close();
         }

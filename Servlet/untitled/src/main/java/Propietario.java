@@ -1,5 +1,3 @@
-package com.example.myglovoapp.beans;
-
 public class Propietario {
     private int id;
     private int idRestaurante;
