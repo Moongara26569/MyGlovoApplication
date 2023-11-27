@@ -18,11 +18,14 @@ import java.util.List;
 public class lstRestaurantesActivity extends AppCompatActivity implements ContractLstRestaurantes.View {
     private lstRestaurantesPresenter presenter = new lstRestaurantesPresenter(this);
 
-    RecyclerView recyclerView;
+    private RecyclerView recyclerView;
+    private MyAdapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lst_restaurantes);
+
         recyclerView = findViewById(R.id.lstRestaurantes);
 
         /*
@@ -33,6 +36,8 @@ public class lstRestaurantesActivity extends AppCompatActivity implements Contra
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         presenter.lstRestaurantes("");
+
+
 
     }
 

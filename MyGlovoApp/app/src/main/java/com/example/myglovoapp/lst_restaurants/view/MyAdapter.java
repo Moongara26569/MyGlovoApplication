@@ -10,17 +10,19 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.myglovoapp.R;
 import com.example.myglovoapp.beans.Restaurante;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
     Context context;
-    List<Restaurante> lstRestaurantes;
+    ArrayList<Restaurante> lstRestaurantes;
 
-    public MyAdapter(Context context, List<Restaurante> lstRestaurantes) {
+    public MyAdapter(Context context, ArrayList<Restaurante> lstRestaurantes) {
         this.context = context;
         this.lstRestaurantes = lstRestaurantes;
     }
+
 
     @NonNull
     @Override

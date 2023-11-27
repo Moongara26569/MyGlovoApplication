@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c66f65c-6d1e-4cbf-8328-8e0bab5fad5d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/beans/Propietario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/beans/Categoria.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/MyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/MyServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/RestauranteAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/RestauranteAction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,26 +119,5 @@
       <updated>1700567067275</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/untitled/src/main/java/UserDAO.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/untitled/src/main/java/UserDAO.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/untitled/src/main/java/UserDAO.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

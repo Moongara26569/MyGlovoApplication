@@ -21,36 +21,36 @@ public class RestauranteAction {
     }
 
     private String allRestaurants(HttpServletRequest request, HttpServletResponse response) {
-        RestauranteDAO restauranteDAO= new RestauranteDAO();
+        System.out.println("Entrando en el metodo list all");
+        RestauranteDAO restauranteDAO = new RestauranteDAO();
         ArrayList<Restaurante> restaurantes = restauranteDAO.findAll();
+        String json = "{\n" +
+                "    \"message\": \"Listado restaurantes \",\n" +
+                "    \"lstRestaurantes\": [\n";
 
-        StringBuilder jsonRespuesta = new StringBuilder();
-        jsonRespuesta.append("[");
+        int size = restaurantes.size();
+        for (int i = 0; i < size; i++) {
+            Restaurante rest = restaurantes.get(i);
+            json += "        {\n" +
+                    "            \"nombre\":\"" + rest.getNombre() + "\",\n" +
+                    "            \"desc\": \"" + rest.getDesc() + "\",\n" +
+                    "            \"tlfn\": \"" + rest.getTlfn() + "\", \n" +
+                    "            \"categoria\": \"" + rest.getCategoria() + "\" \n" +
+                    "        }";
 
-        for (Restaurante restaurante : restaurantes) {
-            jsonRespuesta.append("{");
-            jsonRespuesta.append("\"idRestaurante\": ").append(restaurante.getIdRestaurante()).append(",");
-            jsonRespuesta.append("\"nombre\": \"").append(restaurante.getNombre()).append("\",");
-            jsonRespuesta.append("\"desc\": \"").append(restaurante.getDesc()).append("\",");
-            jsonRespuesta.append("\"tlfn\": \"").append(restaurante.getTlfn()).append("\",");
-            jsonRespuesta.append("\"categoria\": \"").append(restaurante.getCategoria()).append("\"");
-            jsonRespuesta.append("},");
+            // Agregar una coma solo si no es el último elemento
+            if (i < size - 1) {
+                json += ",";
+            }
+
+            json += "\n";
         }
 
-        // Eliminar la coma final si hay elementos en la lista
-        if (!restaurantes.isEmpty()) {
-            jsonRespuesta.deleteCharAt(jsonRespuesta.length() - 1);
-        }
+        json += "    ]\n" +
+                "}";
+        System.out.println(json);
 
-        jsonRespuesta.append("]");
 
-        response.setContentType("application/json");
-        try (PrintWriter out = response.getWriter()) {
-            out.print(jsonRespuesta.toString());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return jsonRespuesta.toString();
+        return json;
     }
 }
