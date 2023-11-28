@@ -30,10 +30,10 @@ public class lstRestaurantesModel implements ContractLstRestaurantes.Model {
 
 
     @Override
-    public void lstRestaurantesAPI(String lstRestaurantes, OnRestaurantesListener respuesta) {
+    public void lstRestaurantesAPI(String filtro, OnRestaurantesListener respuesta) {
         ApiService apiService = RetrofitCliente.getClient(ApiService.URL).create(ApiService.class);
 
-        Call<JsonRestaurantesData> call =  apiService.getDataRestaurantes("RESTAURANTE.ALLRESTAURANTS");
+        Call<JsonRestaurantesData> call =  apiService.getDataRestaurantes("RESTAURANTE.ALLRESTAURANTS",filtro);
         call.enqueue(new Callback<JsonRestaurantesData>() {
             @Override
             public void onResponse(Call<JsonRestaurantesData> call, Response<JsonRestaurantesData> response) {

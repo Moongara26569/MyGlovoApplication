@@ -23,7 +23,25 @@ public class RestauranteAction {
     private String allRestaurants(HttpServletRequest request, HttpServletResponse response) {
         System.out.println("Entrando en el metodo list all");
         RestauranteDAO restauranteDAO = new RestauranteDAO();
-        ArrayList<Restaurante> restaurantes = restauranteDAO.findAll();
+        ArrayList<Restaurante> restaurantes = restauranteDAO.findAll("SELECT  *  FROM RESTAURANTES");
+        String filtro = request.getParameter("FILTRO");
+
+        System.out.println(filtro);
+
+        switch (filtro){
+            case "Italiana":
+                restaurantes = restauranteDAO.findAll("SELECT  *  FROM RESTAURANTES WHERE categoria ='Italiana'");
+                break;
+            case "Mexicana":
+                restaurantes = restauranteDAO.findAll("SELECT  *  FROM RESTAURANTES WHERE categoria ='Mexicana'");
+                break;
+            case "Parrilla":
+                restaurantes = restauranteDAO.findAll("SELECT  *  FROM RESTAURANTES WHERE categoria ='Parrilla'");
+                break;
+            case "":
+                restaurantes = restauranteDAO.findAll("SELECT  *  FROM RESTAURANTES");
+                break;
+        }
         String json = "{\n" +
                 "    \"message\": \"Listado restaurantes \",\n" +
                 "    \"lstRestaurantes\": [\n";

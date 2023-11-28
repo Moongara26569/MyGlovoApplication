@@ -24,6 +24,7 @@ public interface ApiService {
                                    @Query("PASSWORD") String pass);
 
     @GET("MyServlet")
-    Call<JsonRestaurantesData> getDataRestaurantes(@Query("ACTION") String action);
+    Call<JsonRestaurantesData> getDataRestaurantes(@Query("ACTION") String action,
+                                                   @Query("FILTRO") String filtro);
 
 }

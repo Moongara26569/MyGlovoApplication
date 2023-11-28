@@ -18,7 +18,8 @@ public class lstRestaurantesPresenter implements ContractLstRestaurantes.Present
 
     @Override
     public void lstRestaurantes(String filtro) {
-        model.lstRestaurantesAPI("",this);
+
+        model.lstRestaurantesAPI(filtro,this);
     }
 
     @Override

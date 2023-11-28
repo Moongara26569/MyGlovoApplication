@@ -10,11 +10,11 @@ public class RestauranteDAO extends Restaurante{
         this.motorSql = new MotorSQL();
     }
 
-    public ArrayList<Restaurante> findAll() {
+    public ArrayList<Restaurante> findAll(String SQL) {
         ArrayList<Restaurante> restaurantes = new ArrayList<>();
         this.motorSql.connect();
-        String sql = "SELECT * FROM RESTAURANTES WHERE 1=1";
-        try (ResultSet resultSet = this.motorSql.executeQuery(sql)) {
+
+        try (ResultSet resultSet = this.motorSql.executeQuery(SQL)) {
 
             while (resultSet.next()) {
                 int idRestaurante = resultSet.getInt("id");

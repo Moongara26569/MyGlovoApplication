@@ -7,11 +7,32 @@
     tools:context=".lst_restaurants.view.lstRestaurantesActivity">
 
 
-    <TextView
-        android:id="@+id/textView"
+        <Button
+            android:id="@+id/filterItaliana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Italiana"
+
+            tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/filterMexicana"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="Mexicana"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/filterItaliana"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/filterParrilla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parrilla"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/lstRestaurantes"

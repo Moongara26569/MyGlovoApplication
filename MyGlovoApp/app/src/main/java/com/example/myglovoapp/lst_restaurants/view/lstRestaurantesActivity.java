@@ -5,6 +5,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.example.myglovoapp.R;
 import com.example.myglovoapp.beans.Restaurante;
@@ -17,22 +19,42 @@ import java.util.List;
 
 public class lstRestaurantesActivity extends AppCompatActivity implements ContractLstRestaurantes.View {
     private lstRestaurantesPresenter presenter = new lstRestaurantesPresenter(this);
-
     private RecyclerView recyclerView;
     private MyAdapter adapter;
+    Button filterItaliana;
+    Button filterMexicana;
+    Button filterParrilla;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lst_restaurantes);
+        filterItaliana=findViewById(R.id.filterItaliana);
+        filterMexicana=findViewById(R.id.filterMexicana);
+        filterParrilla=findViewById(R.id.filterParrilla);
+        filterItaliana.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                presenter.lstRestaurantes("Italiana");
+            };
+        });
+
+        filterMexicana.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                presenter.lstRestaurantes("Mexicana");
+            };
+        });
+
+        filterParrilla.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                presenter.lstRestaurantes("Parrilla");
+            };
+        });
+
 
         recyclerView = findViewById(R.id.lstRestaurantes);
-
-        /*
-        restaurantes.add(new Restaurante(1, "Nómada", "Restaurante Nómada", "123456789", "Mundo",R.drawable.ic_launcher_background));
-        restaurantes.add(new Restaurante(2, "La Quebradora", "Restaurante Nómada", "123456789", "Mexicana",R.drawable.ic_launcher_background));
-        restaurantes.add(new Restaurante(3, "Burger37", "Restaurante Nómada", "123456789", "Hamburguesería",R.drawable.ic_launcher_background));
-        */
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         presenter.lstRestaurantes("");
