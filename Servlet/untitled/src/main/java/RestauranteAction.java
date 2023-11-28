@@ -28,7 +28,7 @@ public class RestauranteAction {
 
         System.out.println(filtro);
 
-        switch (filtro){
+        switch(filtro){
             case "Italiana":
                 restaurantes = restauranteDAO.findAll("SELECT  *  FROM RESTAURANTES WHERE categoria ='Italiana'");
                 break;
