@@ -35,6 +35,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
         holder.nombre.setText(lstRestaurantes.get(position).getNombre());
         holder.categoria.setText(lstRestaurantes.get(position).getCategoria());
         holder.imageView.setImageResource(lstRestaurantes.get(position).getIdRestaurante());
+        //holder.ratingBar.setRating(lstRestaurantes.get(position).getPuntuacion());
+
     }
 
     @Override
