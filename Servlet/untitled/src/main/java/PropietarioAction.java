@@ -5,11 +5,11 @@ public class PropietarioAction {
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         String jsonRespuesta = "";
         String action = request.getParameter("ACTION");
-        action = "PROPIETARIO.LOGIN";
+        action = "PROPIETARIO.LOG";
         String[] arrayAction = action.split("\\.");
 
         switch (arrayAction[1]) {
-            case "LOGIN":
+            case "LOG":
                 jsonRespuesta = login(request, response);
                 break;
         }

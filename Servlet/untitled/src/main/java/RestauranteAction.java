@@ -29,13 +29,13 @@ public class RestauranteAction {
         System.out.println(filtro);
 
         switch(filtro){
-            case "Italiana":
+            case "ITALIANA":
                 restaurantes = restauranteDAO.findAll("SELECT  *  FROM RESTAURANTES WHERE categoria ='Italiana'");
                 break;
-            case "Mexicana":
+            case "MEXICANA":
                 restaurantes = restauranteDAO.findAll("SELECT  *  FROM RESTAURANTES WHERE categoria ='Mexicana'");
                 break;
-            case "Parrilla":
+            case "PARRILLA":
                 restaurantes = restauranteDAO.findAll("SELECT  *  FROM RESTAURANTES WHERE categoria ='Parrilla'");
                 break;
             case "":

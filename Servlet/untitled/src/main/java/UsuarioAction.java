@@ -13,9 +13,7 @@ public class UsuarioAction {
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         String jsonRespuesta = "";
         String action = request.getParameter("ACTION");
-        action = "USUARIO.LOGIN";
         String[] arrayAction = action.split("\\.");
-
         switch (arrayAction[1]) {
             case "LOGIN":
                 jsonRespuesta = login(request, response);

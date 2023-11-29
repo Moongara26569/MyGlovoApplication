@@ -6,40 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".lst_restaurants.view.lstRestaurantesActivity">
 
-
-        <Button
-            android:id="@+id/filterItaliana"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Italiana"
-
-            tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/filterItaliana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Italiana"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/filterMexicana"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"/>
 
     <Button
         android:id="@+id/filterMexicana"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mexicana"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/filterItaliana"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/filterItaliana"
+        app:layout_constraintEnd_toStartOf="@+id/filterParrilla"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"/>
 
     <Button
         android:id="@+id/filterParrilla"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Parrilla"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/filterMexicana"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints" />
-
-
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/lstRestaurantes"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/filterItaliana"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="20dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,8 +5,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.myglovoapp.R;
 import com.example.myglovoapp.beans.Restaurante;
@@ -35,23 +37,27 @@ public class lstRestaurantesActivity extends AppCompatActivity implements Contra
         filterItaliana.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                presenter.lstRestaurantes("Italiana");
-            };
+                Log.d("TuActividad", "Filtro Italiana presionado");
+                presenter.lstRestaurantes("ITALIANA");
+            }
         });
 
         filterMexicana.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                presenter.lstRestaurantes("Mexicana");
-            };
+                Log.d("TuActividad", "Filtro Mexicana presionado");
+                presenter.lstRestaurantes("MEXICANA");
+            }
         });
 
         filterParrilla.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                presenter.lstRestaurantes("Parrilla");
-            };
+                Log.d("TuActividad", "Filtro Parrilla presionado");
+                presenter.lstRestaurantes("PARRILLA");
+            }
         });
+
 
 
         recyclerView = findViewById(R.id.lstRestaurantes);
@@ -73,8 +79,8 @@ public class lstRestaurantesActivity extends AppCompatActivity implements Contra
 
     }
 
-    @Override
+   /* @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
         super.onPointerCaptureChanged(hasCapture);
-    }
+    }*/
 }
