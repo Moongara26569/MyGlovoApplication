@@ -2,6 +2,7 @@ package com.example.myglovoapp.utils;
 
 
 import com.example.myglovoapp.login_client.JsonUserData;
+import com.example.myglovoapp.login_propietario.JsonPropietarioData;
 import com.example.myglovoapp.lst_restaurants.JsonRestaurantesData;
 
 import retrofit2.Call;
@@ -22,7 +23,9 @@ public interface ApiService {
     Call<JsonUserData> getDataUser(@Query("ACTION") String action,
                                    @Query("NOMBRE") String nombre,
                                    @Query("PASSWORD") String pass);
-
+    Call<JsonPropietarioData> getDataPropietario(@Query("ACTION") String action,
+                                          @Query("NOMBRE") String nombre,
+                                          @Query("PASSWORD") String pass);
     @GET("MyServlet")
     Call<JsonRestaurantesData> getDataRestaurantes(@Query("ACTION") String action,
                                                    @Query("FILTRO") String filtro);
