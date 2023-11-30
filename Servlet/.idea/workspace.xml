@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2728880c-5b30-467b-b000-5a6080adc69b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/anyadirProducto/JsonAnyadirProducto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/PropietarioAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/PropietarioAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/beans/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/beans/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +53,6 @@
       <option name="catalinaBase" value="C:\Users\S2-PC00\.SmartTomcat\Servlet\untitled" />
       <option name="contextPath" value="/untitled" />
       <option name="docBase" value="$PROJECT_DIR$/untitled/src/main/webapp" />
-      <option name="envOptions">
-        <map />
-      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
@@ -64,7 +62,7 @@
         </TomcatInfo>
       </option>
       <option name="vmOptions" value="" />
-      <module name="untitled" />
+      <module name="Servlet" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
