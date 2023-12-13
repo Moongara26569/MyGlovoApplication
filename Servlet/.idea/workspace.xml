@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2728880c-5b30-467b-b000-5a6080adc69b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/beans/Propietario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/beans/Propietario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/beans/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/beans/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/view/LoginClientActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_client/view/LoginClientActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_propietario/ContractLoginPropietario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_propietario/ContractLoginPropietario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_propietario/JsonPropietarioData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_propietario/JsonPropietarioData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_propietario/model/LoginPropietarioModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_propietario/model/LoginPropietarioModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_propietario/presenter/LoginPropietarioPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_propietario/presenter/LoginPropietarioPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_propietario/view/LoginPropietarioActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_propietario/view/LoginPropietarioActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/lstProductos/view/LstProductosActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/lstProductos/view/lstProductosActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/res/layout/activity_login_propietario.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/res/layout/activity_login_propietario.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/res/layout/activity_lst_productos.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/res/layout/activity_lst_productos.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/PropietarioAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/PropietarioAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/UsuarioAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/UsuarioAction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

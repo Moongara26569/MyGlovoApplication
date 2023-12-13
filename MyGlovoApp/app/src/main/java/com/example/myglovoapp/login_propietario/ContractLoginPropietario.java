@@ -6,7 +6,7 @@ import com.example.myglovoapp.login_client.ContractLoginClient;
 
 public interface ContractLoginPropietario {
     interface View{
-        void successLogin(User user);
+        void successLogin(Propietario propietario);
         void failureLogin(String mess);
     }
 

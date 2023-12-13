@@ -33,4 +33,7 @@ public interface ApiService {
     Call<JsonRestaurantesData> getDataRestaurantes(@Query("ACTION") String action,
                                                    @Query("FILTRO") String filtro);
 
+    @GET("MyServlet")
+    Call<JsonRestaurantesData> getDataProductos(@Query("ACTION") String action);
+
 }

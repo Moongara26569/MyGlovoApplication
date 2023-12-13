@@ -27,7 +27,7 @@ public class LoginPropietarioModel implements ContractLoginPropietario.Model {
 
     @Override
     public void loginAPI(Propietario propietario, OnLoginPropietarioListener respuesta) {
-        /*
+
         String nombre = propietario.getNombre();
         String pass = propietario.getPassword();
         ApiService apiService = RetrofitCliente.getClient(ApiService.URL).create(ApiService.class);
@@ -37,10 +37,10 @@ public class LoginPropietarioModel implements ContractLoginPropietario.Model {
             public void onResponse(Call<JsonPropietarioData> call, Response<JsonPropietarioData> response) {
                 if (response.isSuccessful()) {
                     JsonPropietarioData misDatos = response.body();
-                    if (misDatos != null && misDatos.getLstUsers() != null && !misDatos.getLstUsers().isEmpty()) {
-                        if (misDatos != null && misDatos.getLstUsers().size() > 0) {
-                            Log.e("Datos", misDatos.getLstUsers().get(0).getUsername());
-                            respuesta.onFinished(misDatos.getLstUsers().get(0));
+                    if (misDatos != null && misDatos.getLstPropietario() != null && !misDatos.getLstPropietario().isEmpty()) {
+                        if (misDatos != null && misDatos.getLstPropietario().size() > 0) {
+                            Log.e("Datos", misDatos.getLstPropietario().get(0).getNombre());
+                            respuesta.onFinished(misDatos.getLstPropietario().get(0));
                         } else {
                             Log.e("Error de datos", "1");
                         }
@@ -65,7 +65,7 @@ public class LoginPropietarioModel implements ContractLoginPropietario.Model {
 
             }
         });
-        */
+
 
     }
 }

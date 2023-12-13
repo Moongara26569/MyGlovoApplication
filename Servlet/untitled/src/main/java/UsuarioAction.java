@@ -40,9 +40,10 @@ public class UsuarioAction {
                         "    \"message\": \"Login correcto. \",\n" +
                         "    \"lstUsers\": [\n" +
                         "        {\n" +
-                        "            \"username\":\"" +  usuario.getNombre() + "\",\n" +
-                        "            \"token\": \"" +  usuario.getPassword() + "\" \n" +
-                        "        }" +
+                        "            \"id\": \"" + usuario.getId() + "\",\n" +
+                        "            \"username\":\"" + usuario.getNombre() + "\",\n" +
+                        "            \"token\": \"" + usuario.getPassword() + "\" \n" +
+                        "        }\n" +
                         "    ]\n" +
                         "}";
                 // msg = "true";

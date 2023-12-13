@@ -39,4 +39,14 @@ public class Propietario {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+    @Override
+    public String toString() {
+        return "Propietario{" +
+                "id=" + id +
+                ", idRestaurante=" + idRestaurante +
+                ", password='" + password + '\'' +
+                ", nombre='" + nombre + '\'' +
+                '}';
+    }
 }

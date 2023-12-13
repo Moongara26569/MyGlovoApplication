@@ -32,12 +32,14 @@ public class PropietarioAction {
         if( propietariosEncontrados){
 
             int idRestaurante = propietario.getIdRestaurante();
-            msg = "{\n" +
+            int idPropietario = propietario.getId();
+            msg = msg = "{\n" +
                     "    \"message\": \"Login-propietario correcto. \",\n" +
                     "    \"propietario\": {\n" +
                     "        \"nombre\":\"" + propietario.getNombre() + "\",\n" +
                     "        \"password\": \"" + propietario.getPassword() + "\",\n" +
-                    "        \"idRestaurante\": \"" + idRestaurante + "\"\n" +
+                    "        \"idRestaurante\": \"" + idRestaurante + "\",\n" +
+                    "        \"idPropietario\": \"" + idPropietario + "\"\n" +
                     "    }\n" +
                     "}";
         } else {

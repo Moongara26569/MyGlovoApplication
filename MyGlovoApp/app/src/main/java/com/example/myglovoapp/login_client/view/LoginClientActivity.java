@@ -3,6 +3,7 @@ package com.example.myglovoapp.login_client.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -61,7 +62,15 @@ public class LoginClientActivity extends AppCompatActivity implements ContractLo
     @Override
     public void successLogin(User user) {
 
-        Toast.makeText(this, "Bienvenido a Glovo",Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Bienvenido a Glovo",Toast.LENGTH_LONG).show();//TODO TERMINAR INICIO DE SESION
+        /*
+        // esto guarda las preferencias, solo se guarde si de verdad ha salido bien
+        SharedPreferences preferences = getSharedPreferences("user_session", MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("user_data", user.getId().toString());
+        editor.apply();
+        */
+
         Intent intent = new Intent(this, lstRestaurantesActivity.class);
         startActivity(intent);
         finish();

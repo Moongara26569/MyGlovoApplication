@@ -16,7 +16,7 @@
         android:theme="@style/Theme.MyGlovoApp"
         tools:targetApi="31">
         <activity
-            android:name=".lstProductos.view.LstProductosActivity"
+            android:name=".lstProductos.view.lstProductosActivity"
             android:exported="false" />
         <activity
             android:name=".anyadirProducto.view.AnyadirProductoActivity"
