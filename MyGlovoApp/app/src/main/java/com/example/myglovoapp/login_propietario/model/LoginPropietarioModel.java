@@ -24,8 +24,10 @@ public class LoginPropietarioModel implements ContractLoginPropietario.Model {
     public LoginPropietarioModel(LoginPropietarioPresenter presenter){
         this.presenter = presenter;
     }
+
     @Override
     public void loginAPI(Propietario propietario, OnLoginPropietarioListener respuesta) {
+        /*
         String nombre = propietario.getNombre();
         String pass = propietario.getPassword();
         ApiService apiService = RetrofitCliente.getClient(ApiService.URL).create(ApiService.class);
@@ -63,6 +65,8 @@ public class LoginPropietarioModel implements ContractLoginPropietario.Model {
 
             }
         });
+        */
+
     }
 }
 

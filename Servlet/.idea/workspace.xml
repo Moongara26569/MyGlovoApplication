@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2728880c-5b30-467b-b000-5a6080adc69b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../MyGlovoApp/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/beans/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/beans/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_propietario/model/LoginPropietarioModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyGlovoApp/app/src/main/java/com/example/myglovoapp/login_propietario/model/LoginPropietarioModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,14 +36,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/S2-PC00/Documents/GitHub/MyGlovoApplication/Servlet&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Smart Tomcat.Unnamed (1).executor": "Run",
+    "Smart Tomcat.Unnamed.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/DAM/apache-tomcat-8.5.95/apache-tomcat-8.5.95"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Unnamed" type="com.poratu.idea.plugins.tomcat" nameIsGenerated="true">
       <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
@@ -50,23 +54,33 @@
       <predefined_log_file id="Tomcat Catalina Log" />
       <predefined_log_file id="Tomcat Manager Log" />
       <predefined_log_file id="Tomcat Host Manager Log" />
-      <option name="catalinaBase" value="C:\Users\S2-PC00\.SmartTomcat\Servlet\untitled" />
+      <option name="catalinaBase" value="C:\DAM\apache-tomcat-8.5.95\apache-tomcat-8.5.95" />
       <option name="contextPath" value="/untitled" />
-      <option name="docBase" value="$PROJECT_DIR$/untitled/src/main/webapp" />
+      <option name="docBase" value="C:\DAM\TrabajoAndroid\Servlet\untitled\src\main\webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
-          <option name="name" value="Apache Tomcat/8.5.95" />
-          <option name="path" value="D:/apache-tomcat-8.5.95" />
-          <option name="version" value="8.5.95.0" />
+          <option name="name" value="Apache Tomcat/8.5.96" />
+          <option name="path" value="$USER_HOME$/Downloads/apache-tomcat-8.5.96/apache-tomcat-8.5.96" />
+          <option name="version" value="8.5.96.0" />
         </TomcatInfo>
       </option>
       <option name="vmOptions" value="" />
-      <module name="Servlet" />
+      <module name="untitled" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-8336523bb0d9-657b72ed" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
